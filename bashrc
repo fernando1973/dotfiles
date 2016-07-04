@@ -15,11 +15,11 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 export MAVEN_OPTS="-Xms2096m -Xmx2096m -Xss1024K -XX:PermSize=756m -XX:MaxPermSize=1024m"
 
-git config --global http.proxy http://194.65.37.122:80
-git config --global https.proxy http://194.65.37.122:9400
+git config --global http.proxy http://$MYPROXY:80
+git config --global https.proxy http://$MYPROXY:9400
 
-export http_proxy=http://194.65.37.122:80
-export https_proxy=https://194.65.37.122:9400
+export http_proxy=http://$MYPROXY:80
+export https_proxy=https://$MYPROXY:9400
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
